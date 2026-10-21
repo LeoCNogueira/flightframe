@@ -2,19 +2,434 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>FlightFrame</title>
-<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FlightFrame Studio: cópia verificada do cartão SD para Mac</title>
+<meta name="description" content="Copie o cartão do drone ou da câmera com cada arquivo conferido por checksum, backup em segundo disco e projeto organizado para o Lightroom. App para Mac, grátis para baixar.">
+<link rel="canonical" href="https://flightframe.ravendronevideos.com.br/">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+<!-- Link previews (WhatsApp, Instagram, iMessage) -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="FlightFrame Studio">
+<meta property="og:title" content="FlightFrame Studio: do cartão ao projeto, com cada arquivo verificado">
+<meta property="og:description" content="Cópia conferida por checksum, backup em segundo disco, voos organizados e hora certa no Lightroom. App para Mac.">
+<meta property="og:url" content="https://flightframe.ravendronevideos.com.br/">
+<meta property="og:image" content="https://flightframe.ravendronevideos.com.br/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+<header class="site-header" id="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="FlightFrame Studio, início">
+      <img src="assets/icon.png" alt="" width="40" height="40">
+      <span>FlightFrame</span>
+    </a>
+    <nav class="site-nav" aria-label="Seções">
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#recursos">Recursos</a>
+      <a href="#precos">Preços</a>
+      <a href="#duvidas">Dúvidas</a>
+    </nav>
+    <a class="btn btn-primary" href="https://apps.apple.com/app/idSEU-APP-ID">Baixar grátis</a>
+  </div>
+</header>
+
 <main>
-<nav><a href="support.html">Suporte / Support</a><a href="privacy.html">Privacidade / Privacy</a></nav>
-<div class="card">
-<h1>FlightFrame</h1>
-<p class="muted">O fluxo de mídia profissional para pilotos de drone e fotógrafos.<br>The professional media workflow for drone pilots and photographers.</p>
-<p>Do cartão ao projeto, com cada arquivo verificado por checksum, backup em segundo disco e voos organizados automaticamente. Tudo no seu Mac.</p>
-<p>From card to project, with every file checksum-verified, a backup on a second drive and flights organized automatically. All on your Mac.</p>
-</div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <h1>Nunca mais perca um arquivo do cartão.</h1>
+          <p class="lede">O FlightFrame copia suas fotos e vídeos do cartão SD, confere cada arquivo com o original e entrega o projeto organizado, com backup e pronto para o Lightroom. Para pilotos de drone e fotógrafos que não podem refazer um trabalho.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://apps.apple.com/app/idSEU-APP-ID">Baixar grátis</a>
+            <a class="btn btn-quiet" href="#como-funciona">Ver como funciona</a>
+            <a class="badge-slot" href="https://apps.apple.com/app/idSEU-APP-ID">
+              <img src="assets/mac-app-store-badge.svg" alt="Baixar na Mac App Store" onerror="this.parentElement.hidden = true">
+            </a>
+          </div>
+          <p class="hero-terms">Download gratuito. Recursos Pro com 14 dias de teste e pagamento único, sem assinatura. Para Mac com macOS 15 ou mais novo.</p>
+        </div>
+
+        <div class="verify-log" aria-label="Exemplo de cópia verificada">
+          <div class="verify-log-head">
+            <strong>Copiando o cartão do drone</strong>
+            <span>conferência SHA-256</span>
+          </div>
+          <ul class="verify-rows" id="verify-rows">
+            <li><span class="file">DJI_0142.DNG</span><span class="hash">9f2c41e07ab3d58c6e1f0a92b7d4c3e8</span><span class="state ok">Verificado</span></li>
+            <li><span class="file">DJI_0142.JPG</span><span class="hash">47be03d9c1a6f2e85b0d7c4a93e1f6b2</span><span class="state ok">Verificado</span></li>
+            <li><span class="file">DJI_0143.MP4</span><span class="hash">c80d2f6a4e19b7d3a5f0e8c21b6d4a97</span><span class="state ok">Verificado</span></li>
+            <li><span class="file">DJI_0143.SRT</span><span class="hash">1e7a9c3f5b08d2e64c1a7f9b3d5e0c28</span><span class="state ok">Verificado</span></li>
+            <li><span class="file">DJI_0144.DNG</span><span class="hash">b5f3e1a8c7d2094f6e3b1a5c8d7f2e04</span><span class="state ok">Verificado</span></li>
+          </ul>
+          <div class="verify-foot">
+            <span><b id="verify-count">128</b> arquivos verificados</span>
+            <span><b>0</b> divergências</span>
+          </div>
+        </div>
+      </div>
+
+      <figure class="hero-shot">
+        <div class="window">
+          <div class="window-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+          <img src="assets/screen-dashboard.jpg" width="1920" height="1200" alt="Painel do FlightFrame com a área para soltar o cartão e os projetos recentes verificados">
+        </div>
+        <figcaption class="shot-caption">O Painel do FlightFrame: solte o cartão e comece.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Promises -->
+  <section class="promises" aria-label="Garantias">
+    <div class="wrap">
+      <ul class="promise-list">
+        <li><strong>Cópia conferida</strong><span>Cada arquivo comparado com o original por SHA-256.</span></li>
+        <li><strong>Originais intactos</strong><span>O app só lê o cartão. Nada é movido nem apagado.</span></li>
+        <li><strong>Nada sobrescrito</strong><span>Arquivos com o mesmo nome ganham _2, nunca substituem outro.</span></li>
+        <li><strong>Tudo no seu Mac</strong><span>Nenhuma foto vai para a nuvem.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Problem -->
+  <section class="section problem">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Arrastar a pasta no Finder e torcer não é backup.</h2>
+        <p class="lede">Todo trabalho termina do mesmo jeito: o cartão cheio, o cliente esperando e a dúvida se tudo foi copiado mesmo.</p>
+      </div>
+      <div class="pain-grid">
+        <div class="pain"><h3>A cópia que parecia completa</h3><p>O Finder não confere se o arquivo chegou inteiro. Um setor ruim no cartão e você só descobre na edição.</p></div>
+        <div class="pain"><h3>O cartão formatado cedo demais</h3><p>Sem um segundo backup conferido, um HD que falha leva o trabalho junto.</p></div>
+        <div class="pain"><h3>As fotos do drone no horário errado</h3><p>O relógio do drone desajusta e o Lightroom mostra tudo com horas de diferença dos vídeos.</p></div>
+        <div class="pain"><h3>Três cartões, três IMG_0001</h3><p>Nomes repetidos se misturam no catálogo e a foto errada vai para o cliente.</p></div>
+        <div class="pain"><h3>Voos e looks misturados</h3><p>Separar à mão qual foto é de qual voo ou de qual set, trabalho após trabalho.</p></div>
+        <div class="pain"><h3>Pastas montadas à mão</h3><p>RAW, JPEG, vídeos, .SRT, seleção e entrega organizados do zero a cada projeto.</p></div>
+      </div>
+      <p class="problem-close">O FlightFrame transforma esse fim de dia em um clique, com prova de que cada arquivo chegou inteiro.</p>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="section" id="como-funciona">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Do cartão ao Lightroom em quatro passos</h2>
+        <p class="lede">Você decide o que copiar. O FlightFrame cuida da cópia, da conferência e da organização.</p>
+      </div>
+
+      <div class="steps">
+        <article class="step">
+          <div class="step-text">
+            <span class="step-num" aria-hidden="true">1</span>
+            <h3>Solte o cartão e revise</h3>
+            <p>Arraste o cartão SD, uma pasta ou arquivos soltos. Em segundos você vê tudo o que há nele, antes de copiar qualquer coisa.</p>
+            <ul>
+              <li>Voos e sets separados por horário e local</li>
+              <li>Duplicatas encontradas antes da cópia</li>
+              <li>Relógio do drone desajustado detectado e corrigido</li>
+            </ul>
+          </div>
+          <div class="window">
+            <div class="window-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+            <img src="assets/screen-review.jpg" width="1920" height="726" loading="lazy" alt="Revisão do cartão com 203 arquivos, formatos, detalhes da câmera e 19 sets detectados">
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step-text">
+            <span class="step-num" aria-hidden="true">2</span>
+            <h3>Crie o projeto em uma etapa</h3>
+            <p>Escolha o tipo de trabalho, do voo imobiliário ao ensaio feminino, e o FlightFrame monta a estrutura de pastas certa. Se quiser, renomeie as cópias com um modelo como 2026_10_12_ana_0001 e ligue o backup no segundo disco.</p>
+          </div>
+          <div class="window">
+            <div class="window-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+            <img src="assets/screen-new-project.jpg" width="1920" height="1200" loading="lazy" alt="Janela de novo projeto com os tipos de ensaio e de drone">
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step-text">
+            <span class="step-num" aria-hidden="true">3</span>
+            <h3>Copie com prova</h3>
+            <p>Cada arquivo é copiado, gravado com segurança e relido para conferir o checksum com o original. Depois, a segunda cópia vai para o backup e é conferida de novo. Assim que a primeira cópia termina, você já pode ejetar o cartão.</p>
+            <ul>
+              <li>Relatório com o checksum de cada arquivo</li>
+              <li>Hora corrigida, autoria e palavras-chave gravadas nas cópias</li>
+              <li>Status Verificado em cada projeto</li>
+            </ul>
+          </div>
+          <div class="window">
+            <div class="window-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+            <img src="assets/screen-project.jpg" width="1920" height="1200" loading="lazy" alt="Projeto com status Verificado e as pastas criadas pelo FlightFrame">
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step-text">
+            <span class="step-num" aria-hidden="true">4</span>
+            <h3>Abra no Lightroom</h3>
+            <p>Com um clique, o Lightroom Classic importa o projeto já organizado: uma coleção para cada voo ou set, palavras-chave de cliente e local e a hora certa nas fotos do drone.</p>
+          </div>
+          <div class="lr-panel" role="img" aria-label="Ilustração das coleções criadas no Lightroom Classic">
+            <h4>Coleções</h4>
+            <ul class="lr-tree">
+              <li class="set">FlightFrame</li>
+              <li class="set" style="padding-left:20px">12 out · Casa Barra</li>
+              <li class="col active">Fachada principal <span>42</span></li>
+              <li class="col">Barra da Tijuca · 15:02 <span>31</span></li>
+              <li class="col">Voo às 16:10 <span>18</span></li>
+            </ul>
+            <dl class="lr-meta">
+              <dt>Cliente</dt><dd>Imobiliária Costa</dd>
+              <dt>Local</dt><dd>Barra da Tijuca</dd>
+              <dt>Captura</dt><dd>12/10/2026 15:02</dd>
+              <dt>FlightFrame</dt><dd>Verificado por checksum</dd>
+            </dl>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Audiences -->
+  <section class="section audiences" id="recursos">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Feito para o seu tipo de trabalho</h2>
+      </div>
+      <div class="aud-grid">
+        <div class="aud">
+          <h3>Para pilotos de drone</h3>
+          <p>Seus voos organizados e com a hora certa, sem planilha e sem conta de fuso horário.</p>
+          <ul class="benefits">
+            <li><strong>Hora certa no Lightroom</strong><span>O relógio desajustado do drone é detectado e a hora corrigida é gravada nas cópias.</span></li>
+            <li><strong>Voos separados sozinhos</strong><span>Cada voo identificado por pausa e distância, com o nome do bairro ou da cidade.</span></li>
+            <li><strong>GPS e altura dos vídeos</strong><span>Lidos dos arquivos .SRT, inclusive a altura máxima de cada voo.</span></li>
+            <li><strong>Telemetria junto do vídeo certo</strong><span>Os .SRT e .LRF acompanham cada vídeo, mesmo com as cópias renomeadas.</span></li>
+            <li><strong>Vídeos 360°</strong><span>Avata 360 e Osmo 360 reconhecidos e copiados com verificação.</span></li>
+          </ul>
+          <div class="soon">
+            <strong>Chegando em breve</strong>
+            <p>Mapa com o trajeto de cada voo, diário de voo, exportação KML e GPX, relatório PDF para o cliente e conferência da autorização do SARPAS pelo número do protocolo.</p>
+          </div>
+        </div>
+        <div class="aud">
+          <h3>Para fotógrafos de ensaio</h3>
+          <p>O backup duplo que você promete no contrato, feito de verdade e conferido.</p>
+          <ul class="benefits">
+            <li><strong>Backup duplo na mesma importação</strong><span>Projeto e segundo disco ou NAS, ambos conferidos com o original.</span></li>
+            <li><strong>Pastas de ensaio prontas</strong><span>RAW, fotos, seleção, editadas e entrega, criadas quando precisa.</span></li>
+            <li><strong>Nomes do seu jeito</strong><span>Modelos com data, cliente e sequência, com RAW e JPEG sempre juntos.</span></li>
+            <li><strong>Sets separados por horário</strong><span>Cada look ou locação vira um grupo, com o nome que você quiser.</span></li>
+            <li><strong>Seu copyright nas fotos</strong><span>Autor, contato e direitos autorais gravados nas cópias automaticamente.</span></li>
+            <li><strong>Privacidade para ensaios íntimos</strong><span>Miniaturas guardadas só na memória, sem nenhuma cópia em disco.</span></li>
+          </ul>
+          <div class="soon">
+            <strong>Chegando em breve</strong>
+            <p>A seleção da cliente direto da lista que ela manda no WhatsApp, separada automaticamente na pasta de seleção.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Por que não só arrastar no Finder?</h2>
+        <p class="lede">O Finder copia. O FlightFrame copia, prova que a cópia está certa e deixa tudo pronto para editar.</p>
+      </div>
+      <div class="compare-wrap">
+        <table class="compare">
+          <thead>
+            <tr><th scope="col">Na hora de descarregar o cartão</th><th scope="col">Finder</th><th scope="col">FlightFrame</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Confere cada arquivo com o original</td><td class="no">Não</td><td class="yes">Sim, por SHA-256</td></tr>
+            <tr><td>Backup conferido em segundo disco</td><td class="no">Não</td><td class="yes">Sim</td></tr>
+            <tr><td>Arquivos com o mesmo nome</td><td class="no">Pergunta se substitui</td><td class="yes">Nunca substitui</td></tr>
+            <tr><td>Pastas de projeto</td><td class="no">À mão</td><td class="yes">Automáticas</td></tr>
+            <tr><td>Voos e sets separados</td><td class="no">Não</td><td class="yes">Sim</td></tr>
+            <tr><td>Hora do drone corrigida</td><td class="no">Não</td><td class="yes">Sim</td></tr>
+            <tr><td>Relatório de cada importação</td><td class="no">Não</td><td class="yes">Sim</td></tr>
+            <tr><td>Lightroom já organizado</td><td class="no">Não</td><td class="yes">Com um clique</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy -->
+  <section class="section" style="padding-top:0">
+    <div class="wrap privacy-band">
+      <div>
+        <h2>Suas fotos não saem do seu Mac.</h2>
+        <p class="lede" style="margin-top:18px">Ensaios, imóveis de clientes, rostos de crianças: o FlightFrame trata tudo como confidencial.</p>
+      </div>
+      <ul>
+        <li>Sem conta, sem login e sem nuvem.</li>
+        <li>Nenhuma foto e nenhum nome de arquivo é enviado para lugar algum.</li>
+        <li>As únicas consultas à internet são sobre localização, como nomes de lugares e mapas, e nunca incluem suas fotos.</li>
+        <li>Sem anúncios e sem coleta de dados.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="section pricing" id="precos">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Comece grátis. Pague uma vez, se quiser mais.</h2>
+        <p class="lede">A segurança dos seus arquivos é sempre gratuita. O Pro acrescenta o que economiza horas a cada trabalho.</p>
+      </div>
+      <div class="plans">
+        <div class="plan">
+          <h3>Grátis</h3>
+          <p class="price">R$ 0<small>para sempre</small></p>
+          <ul>
+            <li>Importação com cópia verificada</li>
+            <li>Relatório com o checksum de cada arquivo</li>
+            <li>Projetos com pastas organizadas</li>
+            <li>Miniaturas e metadados completos</li>
+            <li>Voos e sets detectados automaticamente</li>
+            <li>Duplicatas no cartão antes de copiar</li>
+          </ul>
+          <a class="btn btn-quiet" href="https://apps.apple.com/app/idSEU-APP-ID">Baixar grátis</a>
+        </div>
+        <div class="plan pro">
+          <h3>FlightFrame Pro</h3>
+          <p class="price"><s>R$ 149,90</s>R$ 99,90<small>pagamento único, preço de lançamento</small></p>
+          <ul>
+            <li>Tudo do plano grátis</li>
+            <li>Backup conferido em segundo disco ou NAS</li>
+            <li>Renomeação das cópias com modelos</li>
+            <li>Hora do drone corrigida nas cópias</li>
+            <li>Autoria e palavras-chave nas cópias</li>
+            <li>Abrir no Lightroom com coleções por voo ou set</li>
+            <li>Nomes de lugares e nomes próprios para voos e sets</li>
+            <li>Localizador de duplicatas em todos os projetos</li>
+            <li>Todos os próximos recursos Pro</li>
+          </ul>
+          <a class="btn btn-primary" href="https://apps.apple.com/app/idSEU-APP-ID">Testar grátis por 14 dias</a>
+          <p class="plan-note">O teste é gratuito, não renova e nunca é cobrado. A compra é feita pela App Store e vale em todos os Macs com a mesma Conta Apple.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Maker -->
+  <section class="section">
+    <div class="wrap">
+      <div class="maker">
+        <img src="assets/icon.png" alt="" width="96" height="96">
+        <div>
+          <blockquote>“Criei o FlightFrame porque eu precisava dele. Depois de cada voo e de cada ensaio, eu perdia tempo copiando cartões, corrigindo horários e torcendo para o backup estar inteiro. Agora o Mac faz isso por mim, com prova.”</blockquote>
+          <cite>Leo Nogueira, piloto de drone, fotógrafo e criador do FlightFrame</cite>
+          <p class="beta">Quer testar as novidades antes de todo mundo? <a href="https://testflight.apple.com/join/Wz2NuCgx">Entre no beta pelo TestFlight</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="duvidas" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head"><h2>Dúvidas frequentes</h2></div>
+      <div class="faq">
+        <details><summary>Funciona no meu Mac?</summary><p>Sim, se ele tiver o macOS 15 (Sequoia) ou mais novo. O FlightFrame funciona em Macs com processador Intel e com Apple Silicon.</p></details>
+        <details><summary>O FlightFrame altera ou apaga os arquivos do cartão?</summary><p>Nunca. O app só lê o cartão. As correções de horário e de autoria vão para as cópias, e só depois de elas serem conferidas com o original.</p></details>
+        <details><summary>Como sei que a cópia está correta?</summary><p>Cada arquivo é relido depois de gravado e comparado com o original pelo checksum SHA-256, o mesmo tipo de conferência usado em backups profissionais. O relatório de cada importação lista todos os checksums.</p></details>
+        <details><summary>Preciso ter o Lightroom?</summary><p>Não. O FlightFrame organiza tudo em pastas que funcionam com qualquer editor. O botão Abrir no Lightroom é para quem usa o Lightroom Classic.</p></details>
+        <details><summary>Quais câmeras e drones são compatíveis?</summary><p>Drones DJI, inclusive os arquivos .SRT de telemetria e os vídeos 360°, e os formatos RAW que o macOS reconhece, como DNG, NEF, CR3 e ARW, além de JPEG, HEIC e vídeos MP4 e MOV.</p></details>
+        <details><summary>É uma assinatura?</summary><p>Não. O download é grátis, e o FlightFrame Pro é uma compra única pela App Store, com as atualizações incluídas.</p></details>
+        <details><summary>O teste de 14 dias cobra alguma coisa?</summary><p>Não. O teste é gratuito, não renova sozinho e nunca é cobrado. Quando termina, os recursos Pro voltam a ficar bloqueados, e seus projetos e arquivos continuam intactos.</p></details>
+        <details><summary>Posso usar em mais de um Mac?</summary><p>Sim. A compra fica na sua Conta Apple. Em outro Mac, é só baixar o app e tocar em Restaurar Compras.</p></details>
+        <details><summary>E se o disco de backup estiver desconectado?</summary><p>A cópia do projeto acontece normalmente, e o FlightFrame avisa que o backup ficou pendente. Depois, um clique refaz só o que faltou.</p></details>
+        <details><summary>Tem versão para Windows?</summary><p>Não. O FlightFrame é um app nativo para Mac.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="section final">
+    <div class="wrap">
+      <h2>Seu próximo cartão merece mais do que torcer.</h2>
+      <p>Baixe grátis, importe o próximo trabalho e veja cada arquivo verificado. Os recursos Pro ficam liberados por 14 dias.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://apps.apple.com/app/idSEU-APP-ID">Baixar grátis</a>
+        <a class="btn btn-on-dark" href="#precos">Ver os preços</a>
+      </div>
+    </div>
+  </section>
+
 </main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 FlightFrame Studio</span>
+    <nav aria-label="Rodapé">
+      <a href="privacy.html">Privacidade</a>
+      <a href="support.html">Suporte</a>
+      <a href="https://testflight.apple.com/join/Wz2NuCgx">Beta</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  // Header border once the page scrolls.
+  const header = document.querySelector('.site-header');
+  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  // The copy-and-verify log: one file at a time, like the app does.
+  const rows = document.getElementById('verify-rows');
+  const counter = document.getElementById('verify-count');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (rows && !reduceMotion) {
+    const kinds = ['DNG', 'JPG', 'MP4', 'SRT', 'LRF'];
+    let number = 145;
+    let kind = 0;
+    let verified = Number(counter.textContent);
+    const hex = () => Array.from(crypto.getRandomValues(new Uint8Array(16)), b => b.toString(16).padStart(2, '0')).join('');
+
+    setInterval(() => {
+      const ext = kinds[kind % kinds.length];
+      if (ext === 'DNG' || ext === 'MP4') number += 1;
+      kind += 1;
+
+      const row = document.createElement('li');
+      row.className = 'enter';
+      row.innerHTML = '<span class="file"></span><span class="hash"></span><span class="state busy">Copiando…</span>';
+      row.querySelector('.file').textContent = 'DJI_0' + number + '.' + ext;
+      row.querySelector('.hash').textContent = hex();
+      rows.prepend(row);
+      while (rows.children.length > 5) rows.lastElementChild.remove();
+
+      setTimeout(() => {
+        const state = row.querySelector('.state');
+        state.textContent = 'Verificado';
+        state.className = 'state ok';
+        verified += 1;
+        counter.textContent = verified;
+      }, 900);
+    }, 1600);
+  }
+</script>
 </body>
 </html>
