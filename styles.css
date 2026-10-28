@@ -90,6 +90,13 @@ p { margin: 0; }
 .btn-on-dark:hover { border-color: #fff; }
 
 .badge-slot img { height: 54px; width: auto; }
+.eyebrow { display: inline-block; margin-bottom: 14px; padding: 4px 12px; border-radius: 999px; background: var(--sky-soft); color: var(--night); font-weight: 600; font-size: .95rem; }
+
+/* Features that reach the App Store in the next update. When 1.7 is out,
+   uncomment the rule below and every "na 1.7" tag and note disappears. */
+.next { display: inline-block; margin-left: 4px; padding: 0 8px; border-radius: 999px; background: var(--sky-soft); color: var(--sky); font-family: var(--text); font-size: .78rem; font-weight: 600; line-height: 1.6; letter-spacing: .02em; vertical-align: middle; white-space: nowrap; }
+p.next-note { margin-top: 14px; color: var(--mist); }
+/* .next, .next-note { display: none !important; } */
 
 /* ---------- Header ---------- */
 .site-header {

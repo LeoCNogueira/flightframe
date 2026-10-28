@@ -3,32 +3,39 @@
 Arquivos para o repositório do site (`flightframe`), publicado pelo GitHub Pages em
 `https://flightframe.ravendronevideos.com.br`.
 
-## Situação atual
+## Situação atual (28/10/2026)
 
+- **Na Mac App Store:** FlightFrame Studio **1.3**, Apple ID `6822035026`.
+  Botões de download: `https://apps.apple.com/app/flightframe-studio/id6822035026`.
+- **TestFlight** (`https://testflight.apple.com/join/Wz2NuCgx`) só no convite para o beta: texto do
+  criador, nota do Lightroom, pergunta "O que chega na versão 1.7?", suporte e rodapé ("Beta").
 - **E-mail de suporte:** `suporte@internetmidia.com`, nas páginas de privacidade e suporte.
-- **Botões de download:** apontam para o beta no TestFlight (`https://testflight.apple.com/join/Wz2NuCgx`)
-  até o lançamento.
+- **Selo da Mac App Store:** selo oficial em português (preto) em `assets/mac-app-store-badge.svg`,
+  ao lado dos botões do topo da página, com link para a App Store.
 
-## No lançamento na App Store
+## Quando a 1.7 for aprovada
 
-1. Troque nos botões de download o link do TestFlight pelo da App Store:
-   `https://apps.apple.com/app/id` + o **Apple ID** do app (App Store Connect ▸ App Information).
-   Mantenha o link do TestFlight só no texto "Entre no beta pelo TestFlight" e no rodapé ("Beta").
-2. Só então adicione o **selo oficial da Mac App Store** em português, baixado nas App Store Marketing
-   Tools, como `assets/mac-app-store-badge.svg`. O selo não deve levar ao TestFlight.
-3. Ajuste o texto do criador (`index.html`, procure "Criei o FlightFrame") com as suas palavras.
+Os recursos da 1.5 à 1.7 (plugin do Lightroom, metadados nas cópias, mapa, diário de voo, PDF,
+SARPAS e FAA) aparecem com a etiqueta **"na 1.7"**. No dia em que a 1.7 sair:
+
+1. Em `styles.css`, tire o comentário da linha `/* .next, .next-note { display: none !important; } */`.
+   Todas as etiquetas e avisos "na 1.7" somem de uma vez.
+2. Depois, com calma, apague as etiquetas (`<span class="next">na 1.7</span>`) e os blocos com
+   `class="next-note"` do `index.html`.
 
 ## Manter atualizado
 
-- **Preços:** a seção `#precos` mostra o preço de lançamento (R$ 99,90, de R$ 149,90). Quando o
-  lançamento acabar, troque por R$ 149,90 e tire o valor riscado.
-- **"Chegando em breve":** quando a 1.7 (mapa, diário de voo, PDF, SARPAS) for publicada, mova esses
-  itens para a lista principal de pilotos e atualize a tabela de comparação.
+- **Preços:** a seção `#precos` mostra o preço de lançamento (R$ 99,90, de R$ 149,90). Confira se é o
+  mesmo valor do FlightFrame Pro no App Store Connect. Quando o lançamento acabar, troque por
+  R$ 149,90 e tire o valor riscado.
+- **1.8 (Ensaios):** o quadro "Chegando em breve" dos fotógrafos fala da seleção da cliente. Quando a
+  1.8 sair, mova para a lista principal e troque o exemplo de coleções do Lightroom
+  ("12 out · Casa Barra") pela estrutura nova: FlightFrame ▸ 2026 ▸ 2026_10_12_casa_barra.
+- **`style.css`** (sem "s") é antigo e nenhuma página usa. Pode ser apagado.
 - **`CNAME`:** é o arquivo que liga o domínio próprio ao GitHub Pages. Nunca apague.
 
 ## Publicar pelo GitHub Desktop
 
-1. File ▸ **Clone Repository** ▸ escolha `flightframe` (o repositório **do site**, não o do app).
-2. Copie para a pasta clonada **todo o conteúdo desta pasta** (arquivos `.html`, `styles.css`,
-   `CNAME` e a pasta `assets`), substituindo os antigos.
-3. Commit com o resumo `New landing page` ▸ **Push origin**. Em 1 ou 2 minutos o site novo está no ar.
+1. Abra o repositório `flightframe` (o **do site**, não o do app) no GitHub Desktop.
+2. Confira as mudanças e faça o commit (ou use o commit já pronto) ▸ **Push origin**.
+   Em 1 ou 2 minutos o site novo está no ar.
