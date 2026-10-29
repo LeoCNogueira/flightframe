@@ -3,25 +3,20 @@
 Arquivos para o repositório do site (`flightframe`), publicado pelo GitHub Pages em
 `https://flightframe.ravendronevideos.com.br`.
 
-## Situação atual (28/10/2026)
+## Situação atual (29/10/2026)
 
-- **Na Mac App Store:** FlightFrame Studio **1.3**, Apple ID `6822035026`.
+- **Na Mac App Store:** FlightFrame Studio **1.7**, Apple ID `6822035026`.
   Botões de download: `https://apps.apple.com/app/flightframe-studio/id6822035026`.
 - **TestFlight** (`https://testflight.apple.com/join/Wz2NuCgx`) só no convite para o beta: texto do
-  criador, nota do Lightroom, pergunta "O que chega na versão 1.7?", suporte e rodapé ("Beta").
+  criador, suporte e rodapé ("Beta").
 - **E-mail de suporte:** `suporte@internetmidia.com`, nas páginas de privacidade e suporte.
 - **Selo da Mac App Store:** selo oficial em português (preto) em `assets/mac-app-store-badge.svg`,
   ao lado dos botões do topo da página, com link para a App Store.
 
-## Quando a 1.7 for aprovada
+## Recursos que ainda vão chegar
 
-Os recursos da 1.5 à 1.7 (plugin do Lightroom, metadados nas cópias, mapa, diário de voo, PDF,
-SARPAS e FAA) aparecem com a etiqueta **"na 1.7"**. No dia em que a 1.7 sair:
-
-1. Em `styles.css`, tire o comentário da linha `/* .next, .next-note { display: none !important; } */`.
-   Todas as etiquetas e avisos "na 1.7" somem de uma vez.
-2. Depois, com calma, apague as etiquetas (`<span class="next">na 1.7</span>`) e os blocos com
-   `class="next-note"` do `index.html`.
+Para anunciar um recurso antes de ele estar na loja, use a etiqueta `<span class="next">na 1.8</span>`
+ao lado do item (o estilo está em `styles.css`). Quando a versão sair, apague as etiquetas.
 
 ## Manter atualizado
 
