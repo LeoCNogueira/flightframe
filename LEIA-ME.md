@@ -3,9 +3,13 @@
 Arquivos para o repositório do site (`flightframe`), publicado pelo GitHub Pages em
 `https://flightframe.ravendronevideos.com.br`.
 
-## Situação atual (29/10/2026)
+## Situação atual (31/10/2026)
 
-- **Na Mac App Store:** FlightFrame Studio **1.7**, Apple ID `6822035026`.
+- **Na Mac App Store:** FlightFrame Studio **1.8** (com a seleção da cliente), Apple ID `6822035026`.
+- **Duas línguas:** `index.html` em português e `en/index.html` em inglês, para o mercado americano
+  (preço do Pro em dólar: **$39.99**, links `apps.apple.com/us/...`). As capturas em inglês ficam em
+  `assets/en/` (as da loja, 1.8). Privacidade e suporte têm a parte em inglês na mesma página
+  (`#english`). Ao mudar um texto, mude nas duas línguas.
   Botões de download: `https://apps.apple.com/app/flightframe-studio/id6822035026`.
 - **TestFlight** (`https://testflight.apple.com/join/Wz2NuCgx`) só no convite para o beta: texto do
   criador, suporte e rodapé ("Beta").
@@ -23,9 +27,10 @@ ao lado do item (o estilo está em `styles.css`). Quando a versão sair, apague 
 - **Preços:** a seção `#precos` mostra o preço de lançamento (R$ 99,90, de R$ 149,90). Confira se é o
   mesmo valor do FlightFrame Pro no App Store Connect. Quando o lançamento acabar, troque por
   R$ 149,90 e tire o valor riscado.
-- **1.8 (Ensaios):** o quadro "Chegando em breve" dos fotógrafos fala da seleção da cliente. Quando a
-  1.8 sair, mova para a lista principal e troque o exemplo de coleções do Lightroom
-  ("12 out · Casa Barra") pela estrutura nova: FlightFrame ▸ 2026 ▸ 2026_10_12_casa_barra.
+- **Preços em dólar:** o `en/index.html` mostra $39.99 (no topo, nos preços, nas dúvidas e no bloco
+  `ld+json`). Se o preço mudar no App Store Connect, mude nos quatro lugares.
+- **Selo da Mac App Store em inglês:** `assets/mac-app-store-badge-en.svg`, o oficial preto dos EUA,
+  baixado do App Store Marketing Tools (`toolbox.marketingtools.apple.com`).
 - **`style.css`** (sem "s") é antigo e nenhuma página usa. Pode ser apagado.
 - **`CNAME`:** é o arquivo que liga o domínio próprio ao GitHub Pages. Nunca apague.
 

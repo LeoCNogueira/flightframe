@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FlightFrame Studio: verified SD card offload for Mac</title>
+<meta name="description" content="Offload your drone or camera card with every file checksum-verified, a backup on a second drive and a project ready for Lightroom Classic. A Mac app, free on the Mac App Store.">
+<link rel="canonical" href="https://flightframe.ravendronevideos.com.br/en/">
+<link rel="alternate" hreflang="en" href="https://flightframe.ravendronevideos.com.br/en/">
+<link rel="alternate" hreflang="pt-BR" href="https://flightframe.ravendronevideos.com.br/">
+<link rel="alternate" hreflang="x-default" href="https://flightframe.ravendronevideos.com.br/en/">
+<link rel="icon" type="image/png" href="../assets/favicon.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+
+<!-- Link previews (iMessage, Slack, social) -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:site_name" content="FlightFrame Studio">
+<meta property="og:title" content="FlightFrame Studio: from card to project, every file verified">
+<meta property="og:description" content="Checksum-verified copies, a verified backup on a second drive, flights and sets organized. Now on the Mac App Store.">
+<meta property="og:url" content="https://flightframe.ravendronevideos.com.br/en/">
+<meta property="og:image" content="https://flightframe.ravendronevideos.com.br/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "FlightFrame Studio",
+  "operatingSystem": "macOS 15 or later",
+  "applicationCategory": "PhotographyApplication",
+  "description": "Verified SD card offload for Mac, with a verified backup and a project organized for Lightroom Classic.",
+  "url": "https://flightframe.ravendronevideos.com.br/en/",
+  "downloadUrl": "https://apps.apple.com/us/app/flightframe-studio/id6822035026",
+  "image": "https://flightframe.ravendronevideos.com.br/assets/icon.png",
+  "inLanguage": "en-US",
+  "offers": [
+    { "@type": "Offer", "name": "Free download", "price": "0", "priceCurrency": "USD" },
+    { "@type": "Offer", "name": "FlightFrame Pro", "price": "39.99", "priceCurrency": "USD" }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header" id="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="FlightFrame Studio, home">
+      <img src="../assets/icon.png" alt="" width="40" height="40">
+      <span>FlightFrame Studio</span>
+    </a>
+    <nav class="site-nav" aria-label="Sections">
+      <a href="#how-it-works">How it works</a>
+      <a href="#lightroom">Lightroom</a>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="lang-link" href="../" hreflang="pt-BR" lang="pt-BR" title="Ver em português">PT</a>
+    <a class="btn btn-primary" href="https://apps.apple.com/us/app/flightframe-studio/id6822035026">Download free</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow">Now on the Mac App Store</p>
+          <h1>Never lose a file from your card again.</h1>
+          <p class="lede">FlightFrame Studio offloads your photos and videos from the SD card, checks every file against the original and hands you an organized project, backed up and ready for Lightroom Classic. Built for drone pilots and photographers who can’t reshoot the job.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://apps.apple.com/us/app/flightframe-studio/id6822035026">Download free</a>
+            <a class="btn btn-quiet" href="#how-it-works">See how it works</a>
+            <a class="badge-slot" href="https://apps.apple.com/us/app/flightframe-studio/id6822035026">
+              <img src="../assets/mac-app-store-badge-en.svg" alt="Download on the Mac App Store" onerror="this.parentElement.hidden = true">
+            </a>
+          </div>
+          <p class="hero-terms">Free download on the Mac App Store. Pro features come with a 14-day free trial, then a one-time purchase of $39.99. No subscription. Requires macOS 15 or later.</p>
+        </div>
+
+        <div class="verify-log" aria-label="Example of a verified copy">
+          <div class="verify-log-head">
+            <strong>Offloading the drone card</strong>
+            <span>SHA-256 verification</span>
+          </div>
+          <ul class="verify-rows" id="verify-rows">
+            <li><span class="file">DJI_0142.DNG</span><span class="hash">9f2c41e07ab3d58c6e1f0a92b7d4c3e8</span><span class="state ok">Verified</span></li>
+            <li><span class="file">DJI_0142.JPG</span><span class="hash">47be03d9c1a6f2e85b0d7c4a93e1f6b2</span><span class="state ok">Verified</span></li>
+            <li><span class="file">DJI_0143.MP4</span><span class="hash">c80d2f6a4e19b7d3a5f0e8c21b6d4a97</span><span class="state ok">Verified</span></li>
+            <li><span class="file">DJI_0143.SRT</span><span class="hash">1e7a9c3f5b08d2e64c1a7f9b3d5e0c28</span><span class="state ok">Verified</span></li>
+            <li><span class="file">DJI_0144.DNG</span><span class="hash">b5f3e1a8c7d2094f6e3b1a5c8d7f2e04</span><span class="state ok">Verified</span></li>
+          </ul>
+          <div class="verify-foot">
+            <span><b id="verify-count">128</b> files verified</span>
+            <span><b>0</b> mismatches</span>
+          </div>
+        </div>
+      </div>
+
+      <figure class="hero-shot">
+        <div class="window">
+          <div class="window-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+          <img src="../assets/en/screen-dashboard.jpg" width="1920" height="1200" alt="FlightFrame Studio Dashboard with the drop area for a card and recent verified projects">
+        </div>
+        <figcaption class="shot-caption">The FlightFrame Studio Dashboard: drop in your card and go.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Promises -->
+  <section class="promises" aria-label="Guarantees">
+    <div class="wrap">
+      <ul class="promise-list">
+        <li><strong>Verified copies</strong><span>Every file checked against the original with SHA-256.</span></li>
+        <li><strong>Originals untouched</strong><span>The app only reads your card. Nothing is moved or deleted.</span></li>
+        <li><strong>Nothing overwritten</strong><span>Files with the same name get _2. They never replace another file.</span></li>
+        <li><strong>All on your Mac</strong><span>Not a single photo goes to the cloud.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Problem -->
+  <section class="section problem">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Dragging a folder in Finder and hoping isn’t a backup.</h2>
+        <p class="lede">Every job ends the same way: a full card, a client waiting and that nagging question of whether everything really got copied.</p>
+      </div>
+      <div class="pain-grid">
+        <div class="pain"><h3>The copy that looked complete</h3><p>Finder never checks that a file arrived intact. One bad sector on the card and you find out in the edit.</p></div>
+        <div class="pain"><h3>The card formatted too soon</h3><p>Without a second, verified backup, one failed drive takes the whole job with it.</p></div>
+        <div class="pain"><h3>Drone shots with the wrong time</h3><p>The drone’s clock drifts, and Lightroom shows your photos hours off from your video.</p></div>
+        <div class="pain"><h3>Three cards, three IMG_0001s</h3><p>Duplicate names get mixed up in the catalog, and the wrong photo goes to the client.</p></div>
+        <div class="pain"><h3>Flights and looks all mixed up</h3><p>Sorting out which shot came from which flight or set, by hand, job after job.</p></div>
+        <div class="pain"><h3>Folders built by hand</h3><p>RAW, JPEG, video, .SRT, selects and deliverables set up from scratch on every project.</p></div>
+      </div>
+      <p class="problem-close">FlightFrame Studio turns that end-of-day routine into one click, with proof that every file made it intact.</p>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="section" id="how-it-works">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>From card to Lightroom in four steps</h2>
+        <p class="lede">You decide what to copy. FlightFrame Studio handles the copying, the verification and the organizing.</p>
+      </div>
+
+      <div class="steps">
+        <article class="step">
+          <div class="step-text">
+            <span class="step-num" aria-hidden="true">1</span>
+            <h3>Drop in the card and review</h3>
+            <p>Drag in an SD card, a folder or individual files. In seconds you see everything on it, before a single file is copied.</p>
+            <ul>
+              <li>Flights and sets split by time and place</li>
+              <li>Duplicates caught before copying</li>
+              <li>A drifting drone clock detected and corrected</li>
+            </ul>
+          </div>
+          <div class="window">
+            <div class="window-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+            <img src="../assets/en/screen-flights.jpg" width="1920" height="1200" loading="lazy" alt="A drone project’s flights on a map, each one named after where it took off">
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step-text">
+            <span class="step-num" aria-hidden="true">2</span>
+            <h3>Create the project in one step</h3>
+            <p>Pick the kind of job, from a real estate flight to a family session, and FlightFrame Studio builds the right folder structure. If you like, rename the copies with a template like 2026_10_12_ana_0001 and turn on the backup to a second drive.</p>
+          </div>
+          <div class="window">
+            <div class="window-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+            <img src="../assets/en/screen-project.jpg" width="1920" height="1200" loading="lazy" alt="A project with Verified status and the folders FlightFrame Studio created">
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step-text">
+            <span class="step-num" aria-hidden="true">3</span>
+            <h3>Copy with proof</h3>
+            <p>Every file is copied, safely written and read back to compare its checksum with the original. Then a second copy goes to your backup drive and gets verified again. As soon as the first copy is done, you can eject the card.</p>
+            <ul>
+              <li>A report with every file’s checksum</li>
+              <li>Corrected time, authorship and keywords written to the copies</li>
+              <li>Verified status on every project</li>
+            </ul>
+          </div>
+          <div class="window">
+            <div class="window-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+            <img src="../assets/en/screen-flight.jpg" width="1920" height="1200" loading="lazy" alt="One flight with its track on the map and the verified photos taken on it">
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step-text">
+            <span class="step-num" aria-hidden="true">4</span>
+            <h3>Open in Lightroom</h3>
+            <p>One click and Lightroom Classic imports the project already organized: collections by year and project, one per flight or set, client and location keywords and the right time on your drone shots. <a href="#lightroom">See everything it does for your catalog.</a></p>
+          </div>
+          <div class="lr-panel" role="img" aria-label="Illustration of the collections created in Lightroom Classic">
+            <h4>Collections</h4>
+            <ul class="lr-tree">
+              <li class="set">FlightFrame</li>
+              <li class="set" style="padding-left:20px">2026</li>
+              <li class="set" style="padding-left:40px">2026_10_12_lakeview_house</li>
+              <li class="col active">Front elevation <span>42</span></li>
+              <li class="col">Malibu · 3:02 PM <span>31</span></li>
+              <li class="col">Flight at 4:10 PM <span>18</span></li>
+            </ul>
+            <dl class="lr-meta">
+              <dt>Client</dt><dd>Coastal Realty</dd>
+              <dt>Location</dt><dd>Malibu</dd>
+              <dt>Capture</dt><dd>10/12/2026 3:02 PM</dd>
+              <dt>FlightFrame</dt><dd>Checksum verified</dd>
+            </dl>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightroom Classic -->
+  <section class="section lightroom" id="lightroom">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>If you edit in Lightroom Classic, the job shows up ready.</h2>
+        <p class="lede">Before the import, FlightFrame Studio does everything you’d otherwise do by hand in the catalog. When Lightroom opens, your photos already have the right time, your author info and their own flight or set.</p>
+      </div>
+
+      <div class="ba-grid">
+        <div class="ba-col before">
+          <h3>Without FlightFrame Studio</h3>
+          <ul>
+            <li>Import the card and wait on an unverified copy</li>
+            <li>Fix drone shots with Edit Capture Time</li>
+            <li>Apply a copyright and contact info preset</li>
+            <li>Build a collection for every flight or look by hand</li>
+            <li>Type in client and location keywords</li>
+            <li>Figure out which IMG_0001 came from which card</li>
+          </ul>
+        </div>
+        <div class="ba-col after">
+          <h3>With FlightFrame Studio</h3>
+          <ul>
+            <li>One click on Open in Lightroom</li>
+            <li>Photos imported from the project folder, already verified</li>
+            <li>The right time from the start, drone shots included</li>
+            <li>Copyright, creator and contact info already filled in</li>
+            <li>Collections by year and project, one per flight or set</li>
+            <li>A “Client selection” collection with the photos your client picked</li>
+            <li>Client, location and job type keywords</li>
+            <li>Unique file names, no mix-ups in the catalog</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="lr-benefits">
+        <div>
+          <h3>A FlightFrame Studio panel in Lightroom</h3>
+          <p>On every photo, see its flight or set, the location and confirmation that the copy was checksum-verified.</p>
+        </div>
+        <div>
+          <h3>RAW, DNG and JPEG</h3>
+          <p>The right time, authorship and keywords reach your catalog in every format your drone and camera shoot.</p>
+        </div>
+        <div>
+          <h3>A catalog that stays consistent</h3>
+          <p>Every job shows up with the same folders and collections, project after project, without relying on anyone’s memory.</p>
+        </div>
+        <div>
+          <h3>Set up in a minute</h3>
+          <p>Install the plug-in from the app’s Settings and it shows up in Lightroom Classic’s Plug-in Manager.</p>
+        </div>
+      </div>
+      <p class="lr-note">Requires Lightroom Classic. The cloud-based Lightroom doesn’t support plug-ins. This feature is part of FlightFrame Pro, with a 14-day free trial.</p>
+    </div>
+  </section>
+
+  <!-- Audiences -->
+  <section class="section audiences" id="features">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Built for the way you work</h2>
+      </div>
+      <div class="aud-grid">
+        <div class="aud">
+          <h3>For drone pilots</h3>
+          <p>Your flights organized with the right time, with no spreadsheets and no time zone math.</p>
+          <ul class="benefits">
+            <li><strong>The right time in Lightroom</strong><span>A drifting drone clock is detected and the corrected time is written to the copies.</span></li>
+            <li><strong>Flights split automatically</strong><span>Each flight found by pauses and distance, and named after the neighborhood or town.</span></li>
+            <li><strong>GPS and altitude from your video</strong><span>Read from .SRT files, including each flight’s max altitude.</span></li>
+            <li><strong>Telemetry stays with the right clip</strong><span>.SRT and .LRF files travel with each video, even when the copies are renamed.</span></li>
+            <li><strong>360° video</strong><span>Avata 360 and Osmo 360 recognized and copied with verification.</span></li>
+            <li><strong>A map of every flight</strong><span>The track, the takeoff point and your photos on the map, free for everyone.</span></li>
+            <li><strong>Flight log and PDF report</strong><span>A spreadsheet flight log, a PDF report for clients and KML and GPX export.</span></li>
+            <li><strong>Part 107 and LAANC checks</strong><span>Paste or type your LAANC authorization and see whether each flight stayed within its dates, times, area and the 400 ft limit, with FAA Facility Maps for controlled airspace. Flying in Brazil? SARPAS authorizations are checked too.</span></li>
+          </ul>
+        </div>
+        <div class="aud">
+          <h3>For portrait photographers</h3>
+          <p>The double backup you promise in your contract, actually done and verified.</p>
+          <ul class="benefits">
+            <li><strong>Client selection from a text</strong><span>Paste the list your client texted or emailed, or open a spreadsheet. File names, numbers and ranges like “120 to 125” all work, and the photos they picked are copied, verified, to your selects folder.</span></li>
+            <li><strong>Lightroom Classic, organized</strong><span>Collections by set, a “Client selection” collection, client keywords and your copyright, ready on import.</span></li>
+            <li><strong>Double backup in one import</strong><span>Your project and a second drive or NAS, both verified against the original.</span></li>
+            <li><strong>Session folders ready to go</strong><span>RAW, photos, selects, edited and delivery, created as you need them.</span></li>
+            <li><strong>File names your way</strong><span>Keep the card’s names or use date, project and number, with RAW and JPEG always together.</span></li>
+            <li><strong>Sets split by time</strong><span>Each look or location becomes its own group, named however you like.</span></li>
+            <li><strong>Your copyright on every photo</strong><span>Creator, contact info and copyright written to the copies automatically.</span></li>
+            <li><strong>Privacy for boudoir sessions</strong><span>Thumbnails kept in memory only, never saved to disk.</span></li>
+          </ul>
+          <div class="window aud-shot">
+            <div class="window-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+            <img src="../assets/en/screen-selection.jpg" width="1920" height="1200" loading="lazy" alt="Client selection with a list pasted from a text message and the photos found in the session">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Why not just drag it in Finder?</h2>
+        <p class="lede">Finder copies. FlightFrame Studio copies, proves the copy is right and gets everything ready to edit.</p>
+      </div>
+      <div class="compare-wrap">
+        <table class="compare">
+          <thead>
+            <tr><th scope="col">When you offload a card</th><th scope="col">Finder</th><th scope="col">FlightFrame Studio</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Checks every file against the original</td><td class="no">No</td><td class="yes">Yes, with SHA-256</td></tr>
+            <tr><td>Verified backup to a second drive</td><td class="no">No</td><td class="yes">Yes</td></tr>
+            <tr><td>Files with the same name</td><td class="no">Asks to replace</td><td class="yes">Never replaces</td></tr>
+            <tr><td>Project folders</td><td class="no">By hand</td><td class="yes">Automatic</td></tr>
+            <tr><td>Flights and sets split</td><td class="no">No</td><td class="yes">Yes</td></tr>
+            <tr><td>Drone time corrected</td><td class="no">No</td><td class="yes">Yes</td></tr>
+            <tr><td>A report for every import</td><td class="no">No</td><td class="yes">Yes</td></tr>
+            <tr><td>Lightroom already organized</td><td class="no">No</td><td class="yes">In one click</td></tr>
+            <tr><td>Client selection from a text</td><td class="no">No</td><td class="yes">Yes</td></tr>
+            <tr><td>Map and log for every flight</td><td class="no">No</td><td class="yes">Yes</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy -->
+  <section class="section" style="padding-top:0">
+    <div class="wrap privacy-band">
+      <div>
+        <h2>Your photos never leave your Mac.</h2>
+        <p class="lede" style="margin-top:18px">Boudoir sessions, clients’ homes, kids’ faces: FlightFrame Studio treats all of it as confidential.</p>
+      </div>
+      <ul>
+        <li>No account, no sign-in and no cloud.</li>
+        <li>No photo and no file name is ever sent anywhere.</li>
+        <li>The only internet requests are about location, like place names and maps, and they never include your photos.</li>
+        <li>No ads and no data collection.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="section pricing" id="pricing">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Start free. Pay once if you want more.</h2>
+        <p class="lede">Keeping your files safe is always free. Pro adds the features that save you hours on every job.</p>
+      </div>
+      <div class="plans">
+        <div class="plan">
+          <h3>Free</h3>
+          <p class="price">$0<small>forever</small></p>
+          <ul>
+            <li>Import with verified copies</li>
+            <li>A report with every file’s checksum</li>
+            <li>Projects with organized folders</li>
+            <li>Thumbnails and full metadata</li>
+            <li>Flights and sets detected automatically</li>
+            <li>Duplicates on the card before you copy</li>
+            <li>A map with each flight’s track</li>
+          </ul>
+          <a class="btn btn-quiet" href="https://apps.apple.com/us/app/flightframe-studio/id6822035026">Download free</a>
+        </div>
+        <div class="plan pro">
+          <h3>FlightFrame Pro</h3>
+          <p class="price">$39.99<small>one-time purchase, no subscription</small></p>
+          <ul>
+            <li>Everything in Free</li>
+            <li>Verified backup to a second drive or NAS</li>
+            <li>Rename copies with templates</li>
+            <li>Drone time corrected in the copies</li>
+            <li>Authorship and keywords in the copies</li>
+            <li>Open in Lightroom with collections by flight or set</li>
+            <li>Client selection from a text, email or spreadsheet</li>
+            <li>KML, GPX, flight log and PDF report</li>
+            <li>LAANC, Part 107 and SARPAS authorization checks</li>
+            <li>Place names and custom names for flights and sets</li>
+            <li>Duplicate Finder across all your projects</li>
+            <li>Every future Pro feature</li>
+          </ul>
+          <a class="btn btn-primary" href="https://apps.apple.com/us/app/flightframe-studio/id6822035026">Try free for 14 days</a>
+          <p class="plan-note">The trial is free, doesn’t renew and is never charged. You buy through the App Store, and Pro works on every Mac signed in with the same Apple Account. Price in the U.S.; other countries see their local price on the App Store.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Maker -->
+  <section class="section">
+    <div class="wrap">
+      <div class="maker">
+        <img src="../assets/icon.png" alt="" width="96" height="96">
+        <div>
+          <blockquote>“I built FlightFrame Studio because I needed it. After every flight and every session, I lost time copying cards, fixing timestamps and hoping my backup was complete. Now my Mac does it for me, with proof.”</blockquote>
+          <cite>Leo Nogueira, drone pilot, photographer and creator of FlightFrame Studio</cite>
+          <p class="beta">Want new features before everyone else? <a href="https://testflight.apple.com/join/Wz2NuCgx">Join the TestFlight beta</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head"><h2>Frequently asked questions</h2></div>
+      <div class="faq">
+        <details><summary>Will it run on my Mac?</summary><p>Yes, if it’s running macOS 15 (Sequoia) or later. FlightFrame Studio runs on both Apple silicon and Intel Macs.</p></details>
+        <details><summary>Does FlightFrame Studio change or delete files on my card?</summary><p>Never. The app only reads your card. Time and authorship fixes go to the copies, and only after they’ve been verified against the original.</p></details>
+        <details><summary>How do I know the copy is correct?</summary><p>Every file is read back after it’s written and compared with the original using a SHA-256 checksum, the same kind of check professional backups use. Each import report lists every checksum.</p></details>
+        <details><summary>Do I need Lightroom?</summary><p>No. FlightFrame Studio organizes everything into folders that work with any editor. If you use Lightroom Classic, you also get the Open in Lightroom button, with collections, keywords and authorship ready to go.</p></details>
+        <details><summary>Does it work with the cloud-based Lightroom?</summary><p>The one-click integration is for Lightroom Classic only, because the cloud-based version doesn’t support plug-ins. The organized folders and the corrected time in the copies work with any editor.</p></details>
+        <details><summary>Do I have to change how I work in Lightroom?</summary><p>No. FlightFrame Studio delivers your photos to the same catalog you always use, with collections and metadata already in place. Your presets and your editing stay the same.</p></details>
+        <details><summary>How does client selection work?</summary><p>Copy the list your client sent, from a text, iMessage, WhatsApp or email, and paste it into the session’s Selection tab, or open a .txt or .csv file. FlightFrame Studio finds each photo by name or number, even after renaming or exporting, tells you what it couldn’t find and copies the picks, verified, to the selects folder. In Lightroom Classic, they show up in a “Client selection” collection.</p></details>
+        <details><summary>Which cameras and drones are supported?</summary><p>DJI drones, including .SRT telemetry files and 360° video, and the RAW formats macOS recognizes, like DNG, NEF, CR3 and ARW, plus JPEG, HEIC and MP4 and MOV video.</p></details>
+        <details><summary>Does FlightFrame Studio check my LAANC authorization?</summary><p>Yes, for your information. Paste or type your LAANC confirmation and the app compares each flight with the authorized dates, times, area and altitude, along with Part 107’s 400 ft limit. Turn on FAA Facility Maps to see the ceiling in controlled airspace. Only the takeoff position is looked up, and you’re still the remote pilot in command.</p></details>
+        <details><summary>Where do I download FlightFrame Studio?</summary><p>On the <a href="https://apps.apple.com/us/app/flightframe-studio/id6822035026">Mac App Store</a>, for free. Updates come through the App Store, like any other Mac app.</p></details>
+        <details><summary>Is it a subscription?</summary><p>No. The download is free, and FlightFrame Pro is a one-time purchase of $39.99 through the App Store, with updates included.</p></details>
+        <details><summary>Does the 14-day trial charge me anything?</summary><p>No. The trial is free, doesn’t renew on its own and is never charged. When it ends, the Pro features lock again, and your projects and files stay exactly as they are.</p></details>
+        <details><summary>Can I use it on more than one Mac?</summary><p>Yes. Your purchase is tied to your Apple Account. On another Mac, just download the app and click Restore Purchases.</p></details>
+        <details><summary>What if my backup drive isn’t connected?</summary><p>The project copy goes ahead as usual, and FlightFrame Studio lets you know the backup is still pending. Later, one click copies just what’s missing.</p></details>
+        <details><summary>Why does the app show up as just “FlightFrame” on my Mac?</summary><p>FlightFrame Studio is its name on the App Store. Once installed, the app uses the short name, FlightFrame, in Launchpad and the menu bar.</p></details>
+        <details><summary>Is there a Windows version?</summary><p>No. FlightFrame Studio is a native Mac app.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="section final">
+    <div class="wrap">
+      <h2>Your next card deserves more than hope.</h2>
+      <p>Download free on the Mac App Store, import your next job and watch every file get verified. Pro features are unlocked for 14 days.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://apps.apple.com/us/app/flightframe-studio/id6822035026">Download free</a>
+        <a class="btn btn-on-dark" href="#pricing">See pricing</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 FlightFrame Studio</span>
+    <nav aria-label="Footer">
+      <a href="https://apps.apple.com/us/app/flightframe-studio/id6822035026">Mac App Store</a>
+      <a href="../privacy.html#english">Privacy</a>
+      <a href="../support.html#english">Support</a>
+      <a href="https://testflight.apple.com/join/Wz2NuCgx">Beta</a>
+      <a href="../" hreflang="pt-BR" lang="pt-BR">Português</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  // Header border once the page scrolls.
+  const header = document.querySelector('.site-header');
+  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  // The copy-and-verify log: one file at a time, like the app does.
+  const rows = document.getElementById('verify-rows');
+  const counter = document.getElementById('verify-count');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (rows && !reduceMotion) {
+    const kinds = ['DNG', 'JPG', 'MP4', 'SRT', 'LRF'];
+    let number = 145;
+    let kind = 0;
+    let verified = Number(counter.textContent);
+    const hex = () => Array.from(crypto.getRandomValues(new Uint8Array(16)), b => b.toString(16).padStart(2, '0')).join('');
+
+    setInterval(() => {
+      const ext = kinds[kind % kinds.length];
+      if (ext === 'DNG' || ext === 'MP4') number += 1;
+      kind += 1;
+
+      const row = document.createElement('li');
+      row.className = 'enter';
+      row.innerHTML = '<span class="file"></span><span class="hash"></span><span class="state busy">Copying…</span>';
+      row.querySelector('.file').textContent = 'DJI_0' + number + '.' + ext;
+      row.querySelector('.hash').textContent = hex();
+      rows.prepend(row);
+      while (rows.children.length > 5) rows.lastElementChild.remove();
+
+      setTimeout(() => {
+        const state = row.querySelector('.state');
+        state.textContent = 'Verified';
+        state.className = 'state ok';
+        verified += 1;
+        counter.textContent = verified;
+      }, 900);
+    }, 1600);
+  }
+</script>
+</body>
+</html>

@@ -126,7 +126,12 @@ body::before {
 .site-nav a { color: var(--ink); text-decoration: none; font-weight: 500; }
 .site-nav a:hover { color: var(--sky); }
 .site-header .btn { min-height: 44px; padding: 0 18px; }
-@media (max-width: 860px) { .site-nav { display: none; } .site-header .btn { margin-left: auto; } }
+/* Language switch: PT on the English page, EN on the Portuguese one. */
+.lang-link { padding: 4px 10px; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); text-decoration: none; font-weight: 600; font-size: .9rem; letter-spacing: .04em; }
+.lang-link:hover { border-color: var(--sky); color: var(--sky); }
+@media (max-width: 860px) { .site-nav { display: none; } .site-header .btn { margin-left: auto; } .site-header .lang-link { margin-left: auto; } .site-header .lang-link + .btn { margin-left: 0; } }
+/* On a phone the header has room for the name and one button; the language link stays in the footer. */
+@media (max-width: 420px) { .site-header .lang-link { display: none; } .site-header .lang-link + .btn { margin-left: auto; } }
 
 /* ---------- Hero ---------- */
 .hero { padding: 72px 0 40px; }
@@ -263,6 +268,7 @@ body::before {
 .soon { margin-top: 32px; padding: 18px 20px; border-radius: var(--radius-control); background: var(--sky-soft); }
 .soon strong { color: var(--night); }
 .soon p { margin-top: 6px; color: var(--ink); font-size: 1.02rem; }
+.aud-shot { margin-top: 32px; }
 @media (max-width: 860px) { .aud-grid { grid-template-columns: 1fr; gap: 72px; } }
 
 /* Comparison */
