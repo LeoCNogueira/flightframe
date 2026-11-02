@@ -7,7 +7,7 @@ Arquivos para o repositório do site (`flightframe`), publicado pelo GitHub Page
 
 - **Na Mac App Store:** FlightFrame Studio **1.8** (com a seleção da cliente), Apple ID `6822035026`.
 - **Duas línguas:** `index.html` em português e `en/index.html` em inglês, para o mercado americano
-  (preço do Pro em dólar: **$39.99**, links `apps.apple.com/us/...`). As capturas ficam em `assets/`
+  (preço do Pro em dólar: **$79.99** desde a 2.0, links `apps.apple.com/us/...`). As capturas ficam em `assets/`
   (português) e `assets/en/` (inglês), as mesmas da loja na 1.8, e cada língua tem a sua imagem de
   prévia de links (`og-image.jpg`). Numa versão nova, troque as capturas e as prévias das duas línguas. Privacidade e suporte têm a parte em inglês na mesma página
   (`#english`). Ao mudar um texto, mude nas duas línguas.
@@ -28,7 +28,7 @@ ao lado do item (o estilo está em `styles.css`). Quando a versão sair, apague 
 - **Preços:** a seção `#precos` mostra o preço de lançamento (R$ 99,90, de R$ 149,90). Confira se é o
   mesmo valor do FlightFrame Pro no App Store Connect. Quando o lançamento acabar, troque por
   R$ 149,90 e tire o valor riscado.
-- **Preços em dólar:** o `en/index.html` mostra $39.99 (no topo, nos preços, nas dúvidas e no bloco
+- **Preços em dólar:** o `en/index.html` mostra $79.99 (no topo, nos preços, nas dúvidas e no bloco
   `ld+json`). Se o preço mudar no App Store Connect, mude nos quatro lugares.
 - **Selo da Mac App Store em inglês:** `assets/mac-app-store-badge-en.svg`, o oficial preto dos EUA,
   baixado do App Store Marketing Tools (`toolbox.marketingtools.apple.com`).
