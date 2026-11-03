@@ -35,6 +35,8 @@ ao lado do item (o estilo está em `styles.css`). Quando a versão sair, apague 
 - **Tag do Google Ads** (`AW-18549963218`): fica no começo do `<head>` das quatro páginas, para medir as
   conversões dos anúncios. A política de privacidade explica isso em "Este site" / "This website"; se
   trocar ou tirar a tag, atualize o texto. Uma página nova também precisa da tag.
+  Logo depois dela vem a conversão "App Store click - FlightFrame" (`AW-18549963218/HikiCJOxvbEdENLzp41F`):
+  todo clique num link para `apps.apple.com` conta, sem precisar marcar cada botão.
 - **`style.css`** (sem "s") é antigo e nenhuma página usa. Pode ser apagado.
 - **`CNAME`:** é o arquivo que liga o domínio próprio ao GitHub Pages. Nunca apague.
 
