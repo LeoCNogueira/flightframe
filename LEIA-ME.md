@@ -3,12 +3,12 @@
 Arquivos para o repositório do site (`flightframe`), publicado pelo GitHub Pages em
 `https://flightframe.ravendronevideos.com.br`.
 
-## Situação atual (31/10/2026)
+## Situação atual (4/11/2026)
 
-- **Na Mac App Store:** FlightFrame Studio **1.8** (com a seleção da cliente), Apple ID `6822035026`.
+- **Na Mac App Store:** FlightFrame Studio **2.0** (pré-seleção com IA, prova para a cliente e prazos de entrega), Apple ID `6822035026`.
 - **Duas línguas:** `index.html` em português e `en/index.html` em inglês, para o mercado americano
   (preço do Pro em dólar: **$79.99** desde a 2.0, links `apps.apple.com/us/...`). As capturas ficam em `assets/`
-  (português) e `assets/en/` (inglês), as mesmas da loja na 1.8, e cada língua tem a sua imagem de
+  (português) e `assets/en/` (inglês), as mesmas da loja na 2.0 (redimensionadas para 1920 px a partir de `docs/AppStore/2.0/capturas-*` do repositório do app), e cada língua tem a sua imagem de
   prévia de links (`og-image.jpg`). Numa versão nova, troque as capturas e as prévias das duas línguas. Privacidade e suporte têm a parte em inglês na mesma página
   (`#english`). Ao mudar um texto, mude nas duas línguas.
   Botões de download: `https://apps.apple.com/app/flightframe-studio/id6822035026`.
@@ -25,9 +25,8 @@ ao lado do item (o estilo está em `styles.css`). Quando a versão sair, apague 
 
 ## Manter atualizado
 
-- **Preços:** a seção `#precos` mostra o preço de lançamento (R$ 99,90, de R$ 149,90). Confira se é o
-  mesmo valor do FlightFrame Pro no App Store Connect. Quando o lançamento acabar, troque por
-  R$ 149,90 e tire o valor riscado.
+- **Preços:** a seção `#precos` mostra R$ 149,90 (desde a 2.0; o preço de lançamento de R$ 99,90 acabou),
+  também na dúvida "É uma assinatura?". Confira se é o mesmo valor do FlightFrame Pro no App Store Connect.
 - **Preços em dólar:** o `en/index.html` mostra $79.99 (no topo, nos preços, nas dúvidas e no bloco
   `ld+json`). Se o preço mudar no App Store Connect, mude nos quatro lugares.
 - **Selo da Mac App Store em inglês:** `assets/mac-app-store-badge-en.svg`, o oficial preto dos EUA,
