@@ -58,7 +58,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../styles.css?v=2026-11-04">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -474,8 +474,65 @@
     </div>
   </section>
 
+  <!-- App family -->
+  <section class="section family" id="apps">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>A family of apps for people who can’t lose a file</h2>
+        <p class="lede">FlightFrame Studio takes care of every new card. From the same maker, two more apps take care of what came before and of all your backups.</p>
+      </div>
+      <ol class="family-grid">
+        <li class="family-app">
+          <span class="family-when">Before · your old archive</span>
+          <header>
+            <img src="../assets/app-acervo-organizer.png" alt="" width="64" height="64" loading="lazy">
+            <h3>Acervo Organizer</h3>
+          </header>
+          <p>Organizes years of photos and videos scattered across hard drives and NAS, without risking a single file.</p>
+          <ul>
+            <li>Shows the result before anything moves</li>
+            <li>Finds duplicates by content, not by name</li>
+            <li>Undoes any organization in one click</li>
+          </ul>
+          <span class="family-status">On the Mac App Store</span>
+          <a class="family-link" href="https://acervoorganizer.ravendronevideos.com.br/en/">Meet Acervo Organizer</a>
+        </li>
+        <li class="family-app here">
+          <span class="family-when">Today · every new card</span>
+          <header>
+            <img src="../assets/icon.png" alt="" width="64" height="64" loading="lazy">
+            <h3>FlightFrame Studio</h3>
+          </header>
+          <p>Takes the card all the way to an organized project and Lightroom, with every file verified.</p>
+          <ul>
+            <li>Copies and backups verified by SHA-256</li>
+            <li>Flights, sets and on-device AI culling</li>
+            <li>Tells you when the card is safe to format</li>
+          </ul>
+          <span class="family-here">You are here</span>
+        </li>
+        <li class="family-app">
+          <span class="family-when">Always · your whole library</span>
+          <header>
+            <img src="../assets/app-photo-backup-guardian.png" alt="" width="64" height="64" loading="lazy">
+            <h3>Photo Backup Guardian</h3>
+          </header>
+          <p>Checks that every photo and video in your library has its 3-2-1 backup copies, even files that never went through FlightFrame.</p>
+          <ul>
+            <li>External drives, NAS and cloud folders</li>
+            <li>“Online only” copies in Google Drive and OneDrive</li>
+            <li>“Can I erase this disk?” before you reuse a drive</li>
+          </ul>
+          <span class="family-status">Beta on TestFlight</span>
+          <a class="family-link" href="https://photobackupguardian.app">Meet Photo Backup Guardian</a>
+        </li>
+      </ol>
+      <p class="family-rules">All three follow the same rules: originals are never changed or deleted, nothing is overwritten, every copy is verified by its content, and no photo leaves your Mac. FlightFrame Studio and Photo Backup Guardian also share the same standard for folders, copies and reports.</p>
+    </div>
+  </section>
+
   <!-- FAQ -->
-  <section class="section" id="faq" style="padding-top:0">
+  <section class="section" id="faq">
     <div class="wrap">
       <div class="section-head"><h2>Frequently asked questions</h2></div>
       <div class="faq">
@@ -496,6 +553,7 @@
         <details><summary>Can I use it on more than one Mac?</summary><p>Yes. Your purchase is tied to your Apple Account. On another Mac, just download the app and click Restore Purchases.</p></details>
         <details><summary>What if my backup drive isn’t connected?</summary><p>The project copy goes ahead as usual, and FlightFrame Studio lets you know the backup is still pending. Later, one click copies just what’s missing.</p></details>
         <details><summary>Why does the app show up as just “FlightFrame” on my Mac?</summary><p>FlightFrame Studio is its name on the App Store. Once installed, the app uses the short name, FlightFrame, in Launchpad and the menu bar.</p></details>
+        <details><summary>What’s the difference between FlightFrame Studio, Acervo Organizer and Photo Backup Guardian?</summary><p>Each one covers a different moment of your work. FlightFrame Studio handles every new card: it copies with verification, organizes the project, makes the backup and tells you when the card is safe to format. <a href="https://acervoorganizer.ravendronevideos.com.br/en/">Acervo Organizer</a> tidies up what’s already on your drives and NAS from before FlightFrame. <a href="https://photobackupguardian.app">Photo Backup Guardian</a> watches your whole library, across every drive and cloud folder, and warns you when a 3-2-1 copy is missing. Use one, or all three together.</p></details>
         <details><summary>Is there a Windows version?</summary><p>No. FlightFrame Studio is a native Mac app.</p></details>
       </div>
     </div>
@@ -524,6 +582,11 @@
       <a href="../support.html#english">Support</a>
       <a href="https://testflight.apple.com/join/Wz2NuCgx">Beta</a>
       <a href="../" hreflang="pt-BR" lang="pt-BR">Português</a>
+    </nav>
+    <nav class="footer-apps" aria-label="Other apps">
+      <span>Other apps:</span>
+      <a href="https://acervoorganizer.ravendronevideos.com.br/en/">Acervo Organizer</a>
+      <a href="https://photobackupguardian.app">Photo Backup Guardian</a>
     </nav>
   </div>
 </footer>
