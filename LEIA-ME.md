@@ -38,11 +38,10 @@ ao lado do item (o estilo está em `styles.css`). Quando a versão sair, apague 
   todo clique num link para `apps.apple.com` conta, sem precisar marcar cada botão.
 - **Família de apps** (`#apps`, nas duas línguas, mais uma dúvida no FAQ e "Outros apps" no rodapé):
   Acervo Organizer (`acervoorganizer.ravendronevideos.com.br`, `/en/` na página em inglês) e
-  Photo Backup Guardian (`photobackupguardian.app`, site só em inglês). Os ícones estão em
+  Photo Backup Guardian (`photobackupguardian.app`, que escolhe português ou inglês pelo navegador). Os ícones estão em
   `assets/app-acervo-organizer.png` e `assets/app-photo-backup-guardian.png` (160 px, tirados dos
   sites dos apps). Quando o Photo Backup Guardian sair do beta, troque "Beta no TestFlight" /
   "Beta on TestFlight" por "Na Mac App Store" / "On the Mac App Store" e aponte o link para a loja, se quiser.
-  Se o Guardian ganhar site em português, mude o link e tire o "site em inglês".
 - **Cache do CSS:** as páginas carregam `styles.css?v=AAAA-MM-DD`. Ao mudar o `styles.css`, troque a data
   nas quatro páginas, para os visitantes não verem a página nova com o estilo antigo.
 - **`style.css`** (sem "s") é antigo e nenhuma página usa. Pode ser apagado.
