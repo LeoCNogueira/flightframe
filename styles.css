@@ -129,7 +129,7 @@ body::before {
 /* Language switch: PT on the English page, EN on the Portuguese one. */
 .lang-link { padding: 4px 10px; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); text-decoration: none; font-weight: 600; font-size: .9rem; letter-spacing: .04em; }
 .lang-link:hover { border-color: var(--sky); color: var(--sky); }
-@media (max-width: 860px) { .site-nav { display: none; } .site-header .btn { margin-left: auto; } .site-header .lang-link { margin-left: auto; } .site-header .lang-link + .btn { margin-left: 0; } }
+@media (max-width: 1024px) { .site-nav { display: none; } .site-header .btn { margin-left: auto; } .site-header .lang-link { margin-left: auto; } .site-header .lang-link + .btn { margin-left: 0; } }
 /* On a phone the header has room for the name and one button; the language link stays in the footer. */
 @media (max-width: 420px) { .site-header .lang-link { display: none; } .site-header .lang-link + .btn { margin-left: auto; } }
 
@@ -336,6 +336,18 @@ body::before {
 }
 .faq details[open] summary::after { transform: translateY(-30%) rotate(-135deg); }
 .faq details p { padding: 0 0 22px; color: var(--mist); max-width: 68ch; }
+
+/* Can I format it? (2.1): three cards and two screenshots */
+.format { background: var(--white); }
+.format-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.format-card { border: 1px solid var(--line); border-radius: var(--radius-window); padding: 28px; background: var(--paper); }
+.format-card h3 { font-size: 1.6rem; margin-top: 12px; }
+.format-card p { margin-top: 10px; color: var(--mist); }
+.format-plan { display: inline-block; padding: 2px 12px; border-radius: 999px; background: var(--sky-soft); color: var(--sky); font-weight: 600; font-size: .9rem; }
+.format-plan.pro { background: var(--night); color: #fff; }
+.format-shots { display: grid; grid-template-columns: 1.15fr 1fr; gap: 28px; margin-top: 56px; align-items: start; }
+.format-shots figure { margin: 0; }
+@media (max-width: 900px) { .format-grid, .format-shots { grid-template-columns: 1fr; } }
 
 /* App family: three apps, one per moment of the work */
 .family { background: var(--white); }

@@ -3,9 +3,9 @@
 Arquivos para o repositório do site (`flightframe`), publicado pelo GitHub Pages em
 `https://flightframe.ravendronevideos.com.br`.
 
-## Situação atual (4/11/2026)
+## Situação atual (8/11/2026)
 
-- **Na Mac App Store:** FlightFrame Studio **2.0** (pré-seleção com IA, prova para a cliente e prazos de entrega), Apple ID `6822035026`.
+- **Na Mac App Store:** FlightFrame Studio **2.1** (“Pode formatar?”, terceira cópia 3-2-1 e Saúde das Cópias; antes, a 2.0 trouxe a pré-seleção com IA, a prova para a cliente e os prazos de entrega), Apple ID `6822035026`. A seção `#pode-formatar` / `#format` mostra a 2.1, com as capturas `screen-backup-status.jpg` e `screen-copy-health.jpg` (esta cortada no alto, 1920 × 452) tiradas de `docs/AppStore/2.1/capturas-*`.
 - **Duas línguas:** `index.html` em português e `en/index.html` em inglês, para o mercado americano
   (preço do Pro em dólar: **$79.99** desde a 2.0, links `apps.apple.com/us/...`). As capturas ficam em `assets/`
   (português) e `assets/en/` (inglês), as mesmas da loja na 2.0 (redimensionadas para 1920 px a partir de `docs/AppStore/2.0/capturas-*` do repositório do app), e cada língua tem a sua imagem de

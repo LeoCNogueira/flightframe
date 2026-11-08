@@ -58,7 +58,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../styles.css?v=2026-11-04">
+<link rel="stylesheet" href="../styles.css?v=2026-11-08b">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -88,6 +88,7 @@
     </a>
     <nav class="site-nav" aria-label="Sections">
       <a href="#how-it-works">How it works</a>
+      <a href="#format">Safe to format</a>
       <a href="#lightroom">Lightroom</a>
       <a href="#features">Features</a>
       <a href="#pricing">Pricing</a>
@@ -105,7 +106,7 @@
     <div class="wrap">
       <div class="hero-grid">
         <div>
-          <p class="eyebrow">New in 2.0: AI culling, right on your Mac</p>
+          <p class="eyebrow">New in 2.1: know when your card is safe to format</p>
           <h1>Never lose a file from your card again.</h1>
           <p class="lede">FlightFrame Studio offloads your photos and videos from the SD card, checks every file against the original and hands you an organized project, backed up and ready for Lightroom Classic. Built for drone pilots and photographers who can’t reshoot the job.</p>
           <div class="hero-actions">
@@ -257,6 +258,50 @@
             </dl>
           </div>
         </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Can I format it? (2.1) -->
+  <section class="section format" id="format">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">New in 2.1</p>
+        <h2>Safe to format the card? FlightFrame Studio answers with proof.</h2>
+        <p class="lede">Before you erase a card, know whether every photo and video is already in the project and in the backup. Not by name: by the content of each file.</p>
+      </div>
+      <ol class="format-grid">
+        <li class="format-card">
+          <span class="format-plan">Free</span>
+          <h3>Can I format it?</h3>
+          <p>Connect the card and the app checks every file by SHA-256: it’s in a project, the project copy is still there, and a verified copy is in the backup. The answer comes in green, yellow or red, with a list of what’s missing and a button to import just that.</p>
+        </li>
+        <li class="format-card">
+          <span class="format-plan pro">Pro</span>
+          <h3>A third copy, the 3-2-1 rule</h3>
+          <p>Beyond the project and the backup, a third copy on another drive, a NAS or a Dropbox, Google Drive or iCloud Drive folder, verified on every import. Complete Backup copies what older projects are missing.</p>
+        </li>
+        <li class="format-card">
+          <span class="format-plan pro">Pro</span>
+          <h3>Copy Health</h3>
+          <p>Files go bad on a drive over time, without warning. The app reads your copies again every so often and, if a photo got damaged or went missing, restores it from a good copy. The damaged one is kept beside it, never deleted.</p>
+        </li>
+      </ol>
+      <div class="format-shots">
+        <figure>
+          <div class="window">
+            <div class="window-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+            <img src="../assets/en/screen-backup-status.jpg" width="1920" height="1200" loading="lazy" alt="A session’s Overview with its backup card: 17 files verified in the backup and 17 in the third copy">
+          </div>
+          <figcaption class="shot-caption">Every project shows what’s already in each backup.</figcaption>
+        </figure>
+        <figure>
+          <div class="window">
+            <div class="window-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+            <img src="../assets/en/screen-copy-health.jpg" width="1920" height="452" loading="lazy" alt="Copy Health with the state of the project, the backup and the third copy">
+          </div>
+          <figcaption class="shot-caption">Copy Health reads the backups again and shows how each place is doing.</figcaption>
+        </figure>
       </div>
     </div>
   </section>
@@ -431,6 +476,7 @@
             <li>Duplicates on the card before you copy</li>
             <li>A map with each flight’s track</li>
             <li>Delivery deadlines with reminders</li>
+            <li>Can I format it? Card check</li>
           </ul>
           <a class="btn btn-quiet" href="https://apps.apple.com/us/app/flightframe-studio/id6822035026">Download free</a>
         </div>
@@ -451,6 +497,8 @@
             <li>LAANC, Part 107 and SARPAS authorization checks</li>
             <li>Place names and custom names for flights and sets</li>
             <li>Duplicate Finder across all your projects</li>
+            <li>A 3-2-1 third copy and Complete Backup</li>
+            <li>Copy Health, with restore</li>
             <li>Every future Pro feature</li>
           </ul>
           <a class="btn btn-primary" href="https://apps.apple.com/us/app/flightframe-studio/id6822035026">Try free for 14 days</a>
@@ -551,9 +599,11 @@
         <details><summary>Is it a subscription?</summary><p>No. The download is free, and FlightFrame Pro is a one-time purchase of $79.99 through the App Store, with updates included. AI culling tools usually bill you every year; here you pay once.</p></details>
         <details><summary>Does the 14-day trial charge me anything?</summary><p>No. The trial is free, doesn’t renew on its own and is never charged. When it ends, the Pro features lock again, and your projects and files stay exactly as they are.</p></details>
         <details><summary>Can I use it on more than one Mac?</summary><p>Yes. Your purchase is tied to your Apple Account. On another Mac, just download the app and click Restore Purchases.</p></details>
+        <details><summary>How do I know it’s safe to format my card?</summary><p>Connect the card and the Dashboard offers Check Card. FlightFrame Studio reads every photo and video and checks by SHA-256 whether the same content is in a project, whether the project copy is still there, and whether a verified copy is in the backup. Green, it’s safe to format; yellow, the backup is missing and one click completes it; red, some files aren’t in any project, and the app selects just those to import. The check is free, and the app never formats or changes the card.</p></details>
+        <details><summary>What happens if a file goes bad in my backup?</summary><p>Drives damage files over time, without warning. With FlightFrame Pro, Copy Health reads your copies again every 30, 90 or 180 days and compares them with the recorded checksum. If a copy got damaged or went missing, it’s restored from a good copy and verified again; the damaged one is kept beside it, with “.damaged” in its name, and never deleted.</p></details>
         <details><summary>What if my backup drive isn’t connected?</summary><p>The project copy goes ahead as usual, and FlightFrame Studio lets you know the backup is still pending. Later, one click copies just what’s missing.</p></details>
         <details><summary>Why does the app show up as just “FlightFrame” on my Mac?</summary><p>FlightFrame Studio is its name on the App Store. Once installed, the app uses the short name, FlightFrame, in Launchpad and the menu bar.</p></details>
-        <details><summary>What’s the difference between FlightFrame Studio, Acervo Organizer and Photo Backup Guardian?</summary><p>Each one covers a different moment of your work. FlightFrame Studio handles every new card: it copies with verification, organizes the project, makes the backup and tells you when the card is safe to format. <a href="https://acervoorganizer.ravendronevideos.com.br/en/">Acervo Organizer</a> tidies up what’s already on your drives and NAS from before FlightFrame. <a href="https://photobackupguardian.app">Photo Backup Guardian</a> watches your whole library, across every drive and cloud folder, and warns you when a 3-2-1 copy is missing. Use one, or all three together.</p></details>
+        <details><summary>What’s the difference between FlightFrame Studio, Acervo Organizer and Photo Backup Guardian?</summary><p>Each one covers a different moment of your work. FlightFrame Studio handles every new card: it copies with verification, organizes the project, makes the backup and the third copy, tells you when the card is safe to format and checks again the copies it made. <a href="https://acervoorganizer.ravendronevideos.com.br/en/">Acervo Organizer</a> tidies up what’s already on your drives and NAS from before FlightFrame. <a href="https://photobackupguardian.app">Photo Backup Guardian</a> watches your whole library, including what never went through FlightFrame, across every drive and cloud folder, with the online-only copies in Google Drive and OneDrive, and warns you when a 3-2-1 copy is missing. Use one, or all three together.</p></details>
         <details><summary>Is there a Windows version?</summary><p>No. FlightFrame Studio is a native Mac app.</p></details>
       </div>
     </div>

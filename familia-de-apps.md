@@ -3,7 +3,7 @@
 Fonte única dos textos da seção "família de apps" nos sites do **FlightFrame Studio**, do **Acervo Organizer** e do
 **Photo Backup Guardian**. Antes de mudar essa seção em qualquer site, mude aqui primeiro e depois nos três.
 
-- **Última mudança:** 5/11/2026, primeira versão. Seção no ar no FlightFrame e no Acervo. O Photo Backup Guardian
+- **Última mudança:** 8/11/2026, FlightFrame 2.1 aprovado: a resposta da dúvida do FAQ diz que o FlightFrame também faz a terceira cópia e reconfere as cópias que ele mesmo fez, e que o Guardian cobre o que nunca passou pelo FlightFrame e as cópias só online. Antes: 5/11/2026, primeira versão. Seção no ar no FlightFrame e no Acervo. O Photo Backup Guardian
   entra depois da aprovação da Apple: o site dele não muda durante a revisão.
 
 ## Onde fica cada site
@@ -86,6 +86,9 @@ Link: "Conhecer o <app>" / "Meet <app>".
 - pt: "Qual a diferença entre o FlightFrame Studio, o Acervo Organizer e o Photo Backup Guardian?"
 - en: "What's the difference between FlightFrame Studio, Acervo Organizer and Photo Backup Guardian?"
 - Resposta: cada um entra num momento do trabalho (o que cada um faz, em uma frase) e "Você pode usar só um ou os três juntos." / "Use one, or all three together."
+- Desde a 2.1, o FlightFrame também confere backups. Para não confundir:
+  - FlightFrame: "…faz o backup e a terceira cópia, diz se o cartão já pode ser formatado e reconfere as cópias que ele mesmo fez." / "…makes the backup and the third copy, tells you when the card is safe to format and checks again the copies it made."
+  - Guardian: "…vigia a biblioteca inteira, inclusive o que nunca passou pelo FlightFrame, em todos os discos e pastas na nuvem, com as cópias só online do Google Drive e do OneDrive, e avisa quando falta uma cópia da regra 3-2-1." / "…watches your whole library, including what never went through FlightFrame, across every drive and cloud folder, with the online-only copies in Google Drive and OneDrive, and warns you when a 3-2-1 copy is missing."
 
 ### Rodapé
 
