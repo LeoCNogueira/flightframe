@@ -3,7 +3,7 @@
 Fonte única dos textos da seção "família de apps" nos sites do **FlightFrame Studio**, do **Acervo Organizer** e do
 **Photo Backup Guardian**. Antes de mudar essa seção em qualquer site, mude aqui primeiro e depois nos três.
 
-- **Última mudança:** 8/11/2026, FlightFrame 2.1 aprovado: a resposta da dúvida do FAQ diz que o FlightFrame também faz a terceira cópia e reconfere as cópias que ele mesmo fez, e que o Guardian cobre o que nunca passou pelo FlightFrame e as cópias só online. Antes: 5/11/2026, primeira versão. Seção no ar no FlightFrame e no Acervo. O Photo Backup Guardian
+- **Última mudança:** 10/11/2026, Acervo Organizer 2.11 publicado, com a sincronização de pastas (Espelho e Adicionar e atualizar, na compra separada "Sincronização e Backup"). A seção não muda: o papel do Acervo na família continua "arrumar o que você já tem", e vigiar os backups segue com o Guardian. A sincronização aparece só na página do Acervo (recursos, preço e FAQ). Antes: 8/11/2026, FlightFrame 2.1 aprovado: a resposta da dúvida do FAQ diz que o FlightFrame também faz a terceira cópia e reconfere as cópias que ele mesmo fez, e que o Guardian cobre o que nunca passou pelo FlightFrame e as cópias só online. Antes: 5/11/2026, primeira versão. Seção no ar no FlightFrame e no Acervo. O Photo Backup Guardian
   entra depois da aprovação da Apple: o site dele não muda durante a revisão.
 
 ## Onde fica cada site
