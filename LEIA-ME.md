@@ -40,8 +40,7 @@ ao lado do item (o estilo está em `styles.css`). Quando a versão sair, apague 
   Acervo Organizer (`acervoorganizer.ravendronevideos.com.br`, `/en/` na página em inglês) e
   Photo Backup Guardian (`photobackupguardian.app`, que escolhe português ou inglês pelo navegador). Os ícones estão em
   `assets/app-acervo-organizer.png` e `assets/app-photo-backup-guardian.png` (160 px, tirados dos
-  sites dos apps). Quando o Photo Backup Guardian sair do beta, troque "Beta no TestFlight" /
-  "Beta on TestFlight" por "Na Mac App Store" / "On the Mac App Store" e aponte o link para a loja, se quiser.
+  sites dos apps). Desde 10/11/2026 os três apps estão na Mac App Store (o Guardian é o `id6824487886`).
 - **Cache do CSS:** as páginas carregam `styles.css?v=AAAA-MM-DD`. Ao mudar o `styles.css`, troque a data
   nas quatro páginas, para os visitantes não verem a página nova com o estilo antigo.
 - **`style.css`** (sem "s") é antigo e nenhuma página usa. Pode ser apagado.

@@ -3,7 +3,7 @@
 Fonte única dos textos da seção "família de apps" nos sites do **FlightFrame Studio**, do **Acervo Organizer** e do
 **Photo Backup Guardian**. Antes de mudar essa seção em qualquer site, mude aqui primeiro e depois nos três.
 
-- **Última mudança:** 10/11/2026, Acervo Organizer 2.11 publicado, com a sincronização de pastas (Espelho e Adicionar e atualizar, na compra separada "Sincronização e Backup"). A seção não muda: o papel do Acervo na família continua "arrumar o que você já tem", e vigiar os backups segue com o Guardian. A sincronização aparece só na página do Acervo (recursos, preço e FAQ). Antes: 8/11/2026, FlightFrame 2.1 aprovado: a resposta da dúvida do FAQ diz que o FlightFrame também faz a terceira cópia e reconfere as cópias que ele mesmo fez, e que o Guardian cobre o que nunca passou pelo FlightFrame e as cópias só online. Antes: 5/11/2026, primeira versão. Seção no ar no FlightFrame e no Acervo. O Photo Backup Guardian
+- **Última mudança:** 10/11/2026, o Photo Backup Guardian saiu do beta e está na Mac App Store: "Na Mac App Store" / "On the Mac App Store" nos três sites, e a seção da família entrou no site dele. Antes: 10/11/2026, Acervo Organizer 2.11 publicado, com a sincronização de pastas (Espelho e Adicionar e atualizar, na compra separada "Sincronização e Backup"). A seção não muda: o papel do Acervo na família continua "arrumar o que você já tem", e vigiar os backups segue com o Guardian. A sincronização aparece só na página do Acervo (recursos, preço e FAQ). Antes: 8/11/2026, FlightFrame 2.1 aprovado: a resposta da dúvida do FAQ diz que o FlightFrame também faz a terceira cópia e reconfere as cópias que ele mesmo fez, e que o Guardian cobre o que nunca passou pelo FlightFrame e as cópias só online. Antes: 5/11/2026, primeira versão. Seção no ar no FlightFrame e no Acervo. O Photo Backup Guardian
   entra depois da aprovação da Apple: o site dele não muda durante a revisão.
 
 ## Onde fica cada site
@@ -20,7 +20,7 @@ Fonte única dos textos da seção "família de apps" nos sites do **FlightFrame
 |---|---|---|
 | FlightFrame Studio | Mac App Store | `https://apps.apple.com/app/flightframe-studio/id6822035026` |
 | Acervo Organizer | Mac App Store | `https://apps.apple.com/app/id6821982992?mt=12` |
-| Photo Backup Guardian | Beta no TestFlight, em revisão na Apple | ainda não tem |
+| Photo Backup Guardian | Mac App Store (desde 10/11/2026) | `https://apps.apple.com/app/id6824487886?mt=12` |
 
 Quando a situação mudar (saiu do beta, preço, recurso novo que muda o papel do app), atualize esta tabela e os três sites.
 
@@ -71,7 +71,7 @@ Visual: o de cada site (cores, fontes, modo escuro); o conteúdo e a estrutura s
   - “Online only” copies in Google Drive and OneDrive
   - “Can I erase this disk?” before you reuse a drive
 
-Situação no cartão: "Na Mac App Store" / "On the Mac App Store"; "Beta no TestFlight" / "Beta on TestFlight".
+Situação no cartão: "Na Mac App Store" / "On the Mac App Store" (hoje, os três apps).
 Link: "Conhecer o <app>" / "Meet <app>".
 
 ### Regras em comum (frase depois dos cartões)
