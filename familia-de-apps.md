@@ -3,7 +3,7 @@
 Fonte única dos textos da seção "família de apps" nos sites do **FlightFrame Studio**, do **Acervo Organizer** e do
 **Photo Backup Guardian**. Antes de mudar essa seção em qualquer site, mude aqui primeiro e depois nos três.
 
-- **Última mudança:** 10/11/2026, o Photo Backup Guardian saiu do beta e está na Mac App Store: "Na Mac App Store" / "On the Mac App Store" nos três sites, e a seção da família entrou no site dele. Antes: 10/11/2026, Acervo Organizer 2.11 publicado, com a sincronização de pastas (Espelho e Adicionar e atualizar, na compra separada "Sincronização e Backup"). A seção não muda: o papel do Acervo na família continua "arrumar o que você já tem", e vigiar os backups segue com o Guardian. A sincronização aparece só na página do Acervo (recursos, preço e FAQ). Antes: 8/11/2026, FlightFrame 2.1 aprovado: a resposta da dúvida do FAQ diz que o FlightFrame também faz a terceira cópia e reconfere as cópias que ele mesmo fez, e que o Guardian cobre o que nunca passou pelo FlightFrame e as cópias só online. Antes: 5/11/2026, primeira versão. Seção no ar no FlightFrame e no Acervo. O Photo Backup Guardian
+- **Última mudança:** 16/11/2026, Photo Backup Guardian 1.1 aprovado pela Apple. No cartão dele, os dois primeiros itens mudaram: "pastas na nuvem, sem baixar nada" (agora também Dropbox, e conferência pela nuvem no OneDrive, no Dropbox e no Backblaze B2; o Google Drive pela API ainda espera a verificação do Google, então saiu da lista) e "Completa as cópias que faltam, sem apagar nem sobrescrever" (as Cópias automáticas do Pro, desligadas de fábrica). A resposta do FAQ acompanha. O papel na família não muda ("Sempre · a biblioteca inteira"), e a frase das regras em comum continua verdadeira (o Guardian só cria cópias novas, nunca sobrescreve nem apaga). Antes: 10/11/2026, o Photo Backup Guardian saiu do beta e está na Mac App Store: "Na Mac App Store" / "On the Mac App Store" nos três sites, e a seção da família entrou no site dele. Antes: 10/11/2026, Acervo Organizer 2.11 publicado, com a sincronização de pastas (Espelho e Adicionar e atualizar, na compra separada "Sincronização e Backup"). A seção não muda: o papel do Acervo na família continua "arrumar o que você já tem", e vigiar os backups segue com o Guardian. A sincronização aparece só na página do Acervo (recursos, preço e FAQ). Antes: 8/11/2026, FlightFrame 2.1 aprovado: a resposta da dúvida do FAQ diz que o FlightFrame também faz a terceira cópia e reconfere as cópias que ele mesmo fez, e que o Guardian cobre o que nunca passou pelo FlightFrame e as cópias só online. Antes: 5/11/2026, primeira versão. Seção no ar no FlightFrame e no Acervo. O Photo Backup Guardian
   entra depois da aprovação da Apple: o site dele não muda durante a revisão.
 
 ## Onde fica cada site
@@ -20,7 +20,7 @@ Fonte única dos textos da seção "família de apps" nos sites do **FlightFrame
 |---|---|---|
 | FlightFrame Studio | Mac App Store | `https://apps.apple.com/app/flightframe-studio/id6822035026` |
 | Acervo Organizer | Mac App Store | `https://apps.apple.com/app/id6821982992?mt=12` |
-| Photo Backup Guardian | Mac App Store (desde 10/11/2026) | `https://apps.apple.com/app/id6824487886?mt=12` |
+| Photo Backup Guardian | Mac App Store (desde 10/11/2026; versão 1.1 desde 16/11/2026) | `https://apps.apple.com/app/id6824487886?mt=12` |
 
 Quando a situação mudar (saiu do beta, preço, recurso novo que muda o papel do app), atualize esta tabela e os três sites.
 
@@ -63,12 +63,12 @@ Visual: o de cada site (cores, fontes, modo escuro); o conteúdo e a estrutura s
 
 **Sempre · a biblioteca inteira / Always · your whole library: Photo Backup Guardian**
 - pt: Confere se cada foto e cada vídeo da sua biblioteca tem as cópias da regra 3-2-1, mesmo o que nunca passou pelo FlightFrame.
-  - Discos externos, NAS e pastas na nuvem
-  - Cópias “só online” no Google Drive e no OneDrive
+  - Discos externos, NAS e pastas na nuvem, sem baixar nada
+  - Completa as cópias que faltam, sem apagar nem sobrescrever
   - “Posso apagar este disco?” antes de reaproveitar um HD
 - en: Checks that every photo and video in your library has its 3-2-1 backup copies, even files that never went through FlightFrame.
-  - External drives, NAS and cloud folders
-  - “Online only” copies in Google Drive and OneDrive
+  - External drives, NAS and cloud folders, without downloading anything
+  - Completes missing copies, without deleting or overwriting
   - “Can I erase this disk?” before you reuse a drive
 
 Situação no cartão: "Na Mac App Store" / "On the Mac App Store" (hoje, os três apps).
@@ -88,7 +88,8 @@ Link: "Conhecer o <app>" / "Meet <app>".
 - Resposta: cada um entra num momento do trabalho (o que cada um faz, em uma frase) e "Você pode usar só um ou os três juntos." / "Use one, or all three together."
 - Desde a 2.1, o FlightFrame também confere backups. Para não confundir:
   - FlightFrame: "…faz o backup e a terceira cópia, diz se o cartão já pode ser formatado e reconfere as cópias que ele mesmo fez." / "…makes the backup and the third copy, tells you when the card is safe to format and checks again the copies it made."
-  - Guardian: "…vigia a biblioteca inteira, inclusive o que nunca passou pelo FlightFrame, em todos os discos e pastas na nuvem, com as cópias só online do Google Drive e do OneDrive, e avisa quando falta uma cópia da regra 3-2-1." / "…watches your whole library, including what never went through FlightFrame, across every drive and cloud folder, with the online-only copies in Google Drive and OneDrive, and warns you when a 3-2-1 copy is missing."
+  - Guardian: "…vigia a biblioteca inteira, inclusive o que nunca passou pelo FlightFrame, em todos os discos e pastas na nuvem, confere as cópias só online do OneDrive, do Dropbox e do Backblaze B2 sem baixar nada, avisa quando falta uma cópia da regra 3-2-1 e, se você ligar as cópias automáticas, completa as que faltam." / "…watches your whole library, including what never went through FlightFrame, across every drive and cloud folder, checks the online-only copies in OneDrive, Dropbox and Backblaze B2 without downloading anything, warns you when a 3-2-1 copy is missing and, if you turn on automatic copies, makes the missing ones."
+- Desde a 1.1, o Guardian também descarrega cartões (Pro, desligado de fábrica). Na família, quem cuida "de cada cartão novo" continua sendo o FlightFrame: não cite a descarga do cartão no texto do Guardian, para os papéis não se confundirem.
 
 ### Rodapé
 
